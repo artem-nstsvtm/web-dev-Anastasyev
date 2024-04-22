@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answers to CSS Questions</title>
+    <style>
+        img {
+        width: 500px;
+		height: 300px;
+		}
+		
+		body {
+        background-color: black;
+		color: white;
+		}
+		
+		 header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+        }
+		
+    </style>
+</head>
+<body>
+	<header>
+        <nav>
+            <a href="#answer1">Box-model</a>
+            <a href="#answer2">Clearfix hack</a>
+            <a href="#answer3">Margin collapse</a>
+            <a href="#answer4">Holy grail</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Answers to CSS Questions</h1>
+            <section>
+                <h2 id="answer1">What is a box model in CSS?</h2>
+                <p>The <strong>box model</strong> in CSS is the design and layout of elements on a web page. It includes the content area, padding, border, and margin around an element.</p>
+                <p>The <mark>box-sizing</mark> property in CSS allows you to define how the total width and height of an element are calculated.</p>
+                <img src="Addasubheadingadobespark-660x346.png" alt="Box Model">
+            </section>
+
+            <section>
+                <h2 id="answer2">What is a “clearfix hack” and when does it need to be applied?</h2>
+                <p>A <strong>"clearfix hack"</strong> is a technique that allows to clear floats in CSS to make sure that a container expands to contain its floated children. It is applied when a parent element contains floated child elements and doesn't have a specified height.</p>
+                <img src="clearfix.jpg" alt="Clearfix Hack">
+            </section>
+
+            <section>
+                <h2 id="answer3">What is a “margin collapse” and use cases for margin: auto and negative margin values?</h2>
+                <p><strong>Margin collapse</strong> occurs when the top and bottom margins of neighbour elements overlay, collapsing into a single margin. The use cases for <mark>margin: auto</mark> include centering an element horizontally inside its container. Negative margin values are used to create overlaying elements or set spacing between elements.</p>
+                <img src="1_irihT0essp7Rs2cqtHxyQw.png" alt="Margin Collapse">
+            </section>
+
+            <section>
+                <h2 id="answer4">Problem with achieving Holy Grail layout and modern solutions</h2>
+                <p>The problem with achieving <strong>the Holy Grail layout</strong> in the past was the difficulty in creating a layout with a header, footer, and three columns of content with equal heights. Modern solutions involve using flexbox or CSS grid layouts to create complex and responsive designs more easily.</p>
+                <img src="holy-grail-3-column-responsive-layout-diagram.png" alt="Holy Grail Layout Problem">
+                <img src="Holy-Grail-Layout.png" alt="Holy Grail Layout Solution">
+            </section>
+        </article>	
+    </main>
+	<footer>
+     <p>Anastasyev Artem | IRM | 21.04.24 , Sunday | Home</p>
+</footer>
+</body>
+</html>
