@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+
+		nav a{
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+		}
+        .hero {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            text-align: center;
+            padding: 20px;
+        }
+        .news-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .news-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .thumbnail {
+            max-width: 100%;
+        }
+        .excerpt {
+            display: block;
+        }
+        
+        /* Media Queries */
+        @media only screen and (max-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+            .news-section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .news-section {
+                grid-template-columns: 1fr;
+            }
+            .excerpt {
+                display: none;
+            }
+        }
+		
+		.thumbnail {
+		    height: 250px;
+			width: 380px;
+		}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MT</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+	</header>
+    <div class="hero">
+        <img src="unnamed.jpg" alt="Hero Image">
+        <div>
+            <h2>Muay Thai</h2>
+            <p>The history of Muay Thai is poorly documented, and little is actually known of its early development. Modern Muay Thai arose from the local form of bare-hand fighting historically known simply as muay, and became recognized as a distinct martial art form in the early 20th century, when the term Muay Thai ('Siamese boxing' in English) was introduced in physical education curricular documents to distinguish it from international boxing</p>
+        </div>
+    </div>
+    <section class="news-section">
+        <div class="news-item">
+            <img class="thumbnail" src="mongkong-muay-thai-boxing-gold-1-1000x1000.jpg" alt="News Thumbnail 1">
+            <h3>Mongkon</h3>
+            <p>April 1, 2023</p>
+            <p class="excerpt">The Mongkon is a traditional headpiece circlet worn by Muay Thai fighters...</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="news-item">
+            <img class="thumbnail" src="rammuay1.jpg" alt="News Thumbnail 2">
+            <h3>Wai Kru</h3>
+            <p>April 2, 2023</p>
+            <p class="excerpt">The wai khru ceremony is a Thai ritual in which students pay respects to teachers...</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="news-item">
+            <img class="thumbnail" src="0-muay-thai-000-tatoo-7-500x500.jpg" alt="News Thumbnail 3">
+            <h3>Traditional Tattoo</h3>
+            <p>April 3, 2023</p>
+            <p class="excerpt">Muay Thai tattoo symbols called Sak Yant tattoos are protective emblems with a deep meaning rooted in...</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="news-item">
+            <img class="thumbnail" src="7.webp" alt="News Thumbnail 4">
+            <h3>Rules</h3>
+            <p>April 4, 2023</p>
+            <p class="excerpt">egal techniques in Muay Thai include punches, elbows, knees, kicks, sweeps, and throws...</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+</body>
+</html>
